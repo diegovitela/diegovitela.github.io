@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguro de Vida - Aginse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 75% 100%, 25% 100%, 0 85%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        p {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        button {
+            font-size: 18px;
+            color: #090909;
+            font-family: inherit;
+            font-weight: 800;
+            cursor: pointer;
+            position: relative;
+            border: none;
+            background: none;
+            text-transform: uppercase;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: color;
+          }
+          
+          button:focus,
+          button:hover {
+            color: #111010;
+          }
+          
+          button:focus:after,
+          button:hover:after {
+            width: 100%;
+            left: 0%;
+          }
+          
+          button:after {
+            content: "";
+            pointer-events: none;
+            bottom: -2px;
+            left: 50%;
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: #0a0a0a;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: width, left;
+          }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Seguro de Vida </h1>
+    </header>
+    <div class="container">
+        <img src="vida.png" alt="Imagen descriptiva del seguro de vida">
+        <h2>Seguro de Vida</h2>
+        <p>El seguro de vida de Aginse está diseñado para proteger a tus seres queridos en caso de eventualidades. Con nuestra amplia experiencia en el sector, ofrecemos planes adaptados a tus necesidades, garantizando el bienestar y futuro financiero de tu familia.</p>
+        <p>Con el seguro de vida de Aginse, puedes estar tranquilo sabiendo que, en caso de un imprevisto, tus seres queridos contarán con el apoyo financiero necesario para continuar con sus vidas.</p>
+        <a id="solicitar-seguro" href="formulario.html" style="text-decoration:none; color:rgb(15, 14, 14);">
+            <button id="button">Más Información</button> 
+    </div>
+</body>
+</html>

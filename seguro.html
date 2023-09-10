@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguros Aginse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 75% 100%, 25% 100%, 0 85%);
+        }
+        
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .insurance-type {
+            border: 1px solid black;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .insurance-type:hover {
+            background-color: #f0f0f0;
+        }
+
+        button {
+            font-size: 18px;
+            color: #090909;
+            font-family: inherit;
+            font-weight: 800;
+            cursor: pointer;
+            position: relative;
+            border: none;
+            background: none;
+            text-transform: uppercase;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: color;
+          }
+          
+          button:focus,
+          button:hover {
+            color: #111010;
+          }
+          
+          button:focus:after,
+          button:hover:after {
+            width: 100%;
+            left: 0%;
+          }
+          
+          button:after {
+            content: "";
+            pointer-events: none;
+            bottom: -2px;
+            left: 50%;
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: #0a0a0a;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: width, left;
+          }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Seguros Aginse</h1>
+    </header>
+    <div class="container">
+        <a href="vida.html" style="text-decoration:none; color:rgb(15, 14, 14);">
+            <div class="insurance-type">
+                <h2>Seguro de Vida</h2>
+                <p>Protege a tus seres queridos con nuestro seguro de vida. Garantiza su bienestar en caso de eventualidades.</p>
+                <button id="button">Más Información</button>
+            </div>
+        </a>
+        <a href="Salud.html" style="text-decoration:none; color:rgb(15, 14, 14);">
+            <div class="insurance-type">
+                <h2>Seguro de Salud</h2>
+                <p>Cuida tu salud y la de tu familia con nuestros planes de salud. Cobertura en hospitales y clínicas.</p>
+                <button id="button">Más Información</button>
+            </div>
+        </a>
+        <a href="vehiculo.html" style="text-decoration:none; color:rgb(15, 14, 14);">
+            <div class="insurance-type">
+                <h2>Seguro de Vehículos</h2>
+                <p>Protege tu vehículo contra accidentes, robos y otros riesgos. Conduce con confianza.</p>
+                <button id="button">Más Información</button>
+            </div>
+        </a>
+        <a href="empresa.html" style="text-decoration:none; color:rgb(15, 14, 14);">
+            <div class="insurance-type">
+                <h2>Seguro para Empresas</h2>
+                <p>Garantiza la continuidad de tu negocio ante cualquier eventualidad. Protege tus activos y empleados.</p>
+                <button id="button">Más Información</button>
+            </div>
+        </a>
+    </div>
+    
+</body>
+</html>
